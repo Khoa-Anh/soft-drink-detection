@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="static/logo/hqsoft.png" alt="Logo" width="50"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/image">Image</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid p-4 bg-secondary text-white text-center">
+            <h2>PepsiCo Product Detection</h2>
+        </div>
+    </header>
+
+    <main class="mb-5">
+
+
+        <h3 class="text-center pt-4">About</h3>
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <p class="text-center">This is a computer vision application used to detect 38 current soft drink
+                    products from PepsiCo on the market (excluding old or seasonal packaging designs). The application
+                    also detects other soft drink products that are not from PepsiCo. The recognized packaging formats
+                    include PET bottles and aluminum cans.</p>
+            </div>
+        </div>
+
+        <h3 class="text-center pt-4">Product List</h3>
+        <p class="text-center">List of soft drink products detected through the application.</p>
+        <div class="container p-4">
+            <table class="table">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>Picture</th>
+                        <th>Class Name</th>
+                        <th>Name</th>
+                        <th>Packaging</th>
+                        <th>Volume</th>
+                    </tr>
+                </thead>
+                <tbody id="productTableBody">
+                </tbody>
+            </table>
+        </div>
+
+        <script>
+            // Đọc tệp JSON và tạo bảng
+            fetch('static/data/class_info.json') // Cập nhật đường dẫn đến tệp JSON trên máy chủ web của bạn
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.getElementById('productTableBody');
+
+                    for (var key in data) {
+                        if (data.hasOwnProperty(key)) {
+                            var product = data[key];
+
+                            // Kiểm tra nếu class_name không phải là "0_sp"
+                            if (product.class_name !== "0_sp") {
+                                var row = document.createElement('tr');
+
+                                var pictureCell = document.createElement('td');
+                                var picture = document.createElement('img');
+                                picture.src = product.link;
+                                picture.width = 100;
+                                picture.height = 100;
+                                pictureCell.appendChild(picture);
+
+                                var classNameCell = document.createElement('td');
+                                classNameCell.textContent = product.class_name;
+
+                                var nameCell = document.createElement('td');
+                                nameCell.textContent = product.name;
+
+                                var packagingCell = document.createElement('td');
+                                packagingCell.textContent = product.packaging;
+
+                                var volumeCell = document.createElement('td');
+                                volumeCell.textContent = product.volume;
+
+                                row.appendChild(pictureCell);
+                                row.appendChild(classNameCell);
+                                row.appendChild(nameCell);
+                                row.appendChild(packagingCell);
+                                row.appendChild(volumeCell);
+
+                                tableBody.appendChild(row);
+                            }
+                        }
+                    }
+                })
+                .catch(error => console.error(error));
+        </script>
+
+    </main>
+
+    <footer class="container-fluid bg-dark text-center p-3 fixed-bottom">
+        <p class="text-white text-center">© 2023 HQsoft. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

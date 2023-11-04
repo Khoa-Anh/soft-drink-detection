@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="static/logo/hqsoft.png" alt="Logo" width="50"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/image">Image</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid p-4 bg-secondary text-white text-center">
+            <h2>PepsiCo Product Detection</h2>
+        </div>
+    </header>
+
+    <main class="mb-5">
+        <div class="container p-3">
+            <form method="POST" enctype="multipart/form-data">
+                <div class="text-center">
+                    {{ form.hidden_tag() }} <!-- CSRF token -->
+
+                    <label class="btn btn-outline-secondary">
+                        Select file
+                        {{ form.file(id="file", style="display: none") }}
+                    </label>
+                    {{ form.submit(class="btn btn-outline-secondary") }}
+                </div>
+
+                <div class="text-center">
+                    <!-- Display flash messages -->
+                    {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                    {% for message in messages %}
+                    {{ message }}
+                    {% endfor %}
+                    {% endif %}
+                    {% endwith %}
+                </div>
+
+        <div class="row p-5">
+            <div class="col-sm-6 p-2">
+                <h3 class="text-center">Image</h3>
+                {% if detection_image %}
+                <img src="{{ url_for('static', filename='uploads/img_output/' + detection_image) }}" alt="Image"
+                    class="img-fluid mx-auto d-block">
+                {% else %}
+                <p class="text-center">No image to display</p>
+                {% endif %}
+            </div>
+
+            <div class="col-sm-6 p-2">
+                <h3 class="text-center">Information</h3>
+                {% if detection_info %}
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Picture</th>                          
+                            <th scope="col">Name</th>
+                            <th scope="col">Packaging</th>
+                            <th scope="col">Volume</th>                           
+                            <th scope="col">Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for _, info in detection_info.items() %}
+                        <tr>
+                            <td>
+                            <img src="{{ info['Picture'] }}" alt="Image"
+                            class="img-thumbnail" width="100" height="100"></td>
+                            <!-- <td>{{ info['Picture'] }}</td> -->
+                            <td>{{ info['Name'] }}</td>
+                            <td>{{ info['Packaging'] }}</td>
+                            <td>{{ info['Volume'] }}</td>
+                            <td>{{ info['Quantity'] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% else %}
+                <p class="text-center">No detection information available</p>
+                {% endif %}
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="container-fluid bg-dark text-center p-3 fixed-bottom">
+        <p class="text-white text-center">© 2023 HQsoft. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

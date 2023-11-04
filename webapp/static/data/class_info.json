@@ -1,0 +1,275 @@
+{
+    "0": {
+        "class_name": "0_sp",
+        "name": "san pham",
+        "packaging": "unknown",
+        "volume": "unknown",
+        "link": "static/products/sp.jpg"
+    },
+    "1": {
+        "class_name": "7up_320ml",
+        "name": "7Up",
+        "packaging": "can",
+        "volume": "320ml",
+        "link": "static/products/7up_320ml.jpg"
+    },
+    "2": {
+        "class_name": "7up_c1_5l",
+        "name": "7Up",
+        "packaging": "bottle",
+        "volume": "1.5l",
+        "link": "static/products/7up_c1_5l.jpg"
+    },
+    "3": {
+        "class_name": "7up_c390ml",
+        "name": "7Up",
+        "packaging": "bottle",
+        "volume": "390ml",
+        "link": "static/products/7up_c390ml.jpg"
+    },
+    "4": {
+        "class_name": "7up_chat_xo_320ml",
+        "name": "7Up chat xo",
+        "packaging": "can",
+        "volume": "320ml",
+        "link": "static/products/7up_chat_xo_320ml.jpg"
+    },
+    "5": {
+        "class_name": "boss_180ml",
+        "name": "Boss",
+        "packaging": "can",
+        "volume": "180ml",
+        "link": "static/products/boss_180ml.jpg"
+    },
+    "6": {
+        "class_name": "lipton_c450ml",
+        "name": "Lipton",
+        "packaging": "bottle",
+        "volume": "450ml",
+        "link": "static/products/lipton_c450ml.jpg"
+    },
+    "7": {
+        "class_name": "mirinda_cam_320ml",
+        "name": "Mirinda cam",
+        "packaging": "can",
+        "volume": "320ml",
+        "link": "static/products/mirinda_cam_320ml.jpg"
+    },
+    "8": {
+        "class_name": "mirinda_cam_c1_5l",
+        "name": "Mirinda cam",
+        "packaging": "bottle",
+        "volume": "1.5l",
+        "link": "static/products/mirinda_cam_c1_5l.jpg"
+    },
+    "9": {
+        "class_name": "mirinda_cam_c390ml",
+        "name": "Mirinda cam",
+        "packaging": "bottle",
+        "volume": "390ml",
+        "link": "static/products/mirinda_cam_c390ml.jpg"
+    },
+    "10": {
+        "class_name": "mirinda_soda_kem_320ml",
+        "name": "Mirinda soda kem",
+        "packaging": "can",
+        "volume": "320ml",
+        "link": "static/products/mirinda_soda_kem_320ml.jpg"
+    },
+    "11": {
+        "class_name": "mirinda_soda_kem_c1_5l",
+        "name": "Mirinda soda kem",
+        "packaging": "bottle",
+        "volume": "1.5l",
+        "link": "static/products/mirinda_soda_kem_c1_5l.jpg"
+    },
+    "12": {
+        "class_name": "mirinda_soda_kem_c390ml",
+        "name": "Mirinda soda kem",
+        "packaging": "bottle",
+        "volume": "390ml",
+        "link": "static/products/mirinda_soda_kem_c390ml.jpg"
+    },
+    "13": {
+        "class_name": "mirinda_viet_quat_320ml",
+        "name": "Mirinda viet quat",
+        "packaging": "can",
+        "volume": "320ml",
+        "link": "static/products/mirinda_viet_quat_320ml.jpg"
+    },
+    "14": {
+        "class_name": "mirinda_viet_quat_c390ml",
+        "name": "Mirinda viet quat",
+        "packaging": "bottle",
+        "volume": "390ml",
+        "link": "static/products/mirinda_viet_quat_c390ml.jpg"
+    },
+    "15": {
+        "class_name": "mirinda_xa_xi_320ml",
+        "name": "Mirinda xa xi",
+        "packaging": "can",
+        "volume": "320ml",
+        "link": "static/products/mirinda_xa_xi_320ml.jpg"
+    },
+    "16": {
+        "class_name": "mirinda_xa_xi_c390ml",
+        "name": "Mirinda xa xi",
+        "packaging": "bottle",
+        "volume": "390ml",
+        "link": "static/products/mirinda_xa_xi_c390ml.jpg"
+    },
+    "17": {
+        "class_name": "olong_tea_plus_320ml",
+        "name": "Olong Tea Plus",
+        "packaging": "can",
+        "volume": "320ml",
+        "link": "static/products/olong_tea_plus_320ml.jpg"
+    },
+    "18": {
+        "class_name": "olong_tea_plus_c1l",
+        "name": "Olong Tea Plus",
+        "packaging": "bottle",
+        "volume": "1l",
+        "link": "static/products/olong_tea_plus_c1l.jpg"
+    },
+    "19": {
+        "class_name": "olong_tea_plus_c450ml",
+        "name": "Olong Tea Plus",
+        "packaging": "bottle",
+        "volume": "450ml",
+        "link": "static/products/olong_tea_plus_c450ml.jpg"
+    },
+    "20": {
+        "class_name": "olong_tea_plus_chanh_c450ml",
+        "name": "Olong Tea Plus chanh",
+        "packaging": "bottle",
+        "volume": "450ml",
+        "link": "static/products/olong_tea_plus_chanh_c450ml.jpg"
+    },
+    "21": {
+        "class_name": "olong_tea_plus_zero_c450ml",
+        "name": "Olong Tea Plus zero",
+        "packaging": "bottle",
+        "volume": "450ml",
+        "link": "static/products/olong_tea_plus_zero_c450ml.jpg"
+    },
+    "22": {
+        "class_name": "pepsi_320ml",
+        "name": "Pepsi",
+        "packaging": "can",
+        "volume": "320ml",
+        "link": "static/products/pepsi_320ml.jpg"
+    },
+    "23": {
+        "class_name": "pepsi_c1_5l",
+        "name": "Pepsi",
+        "packaging": "bottle",
+        "volume": "1.5l",
+        "link": "static/products/pepsi_c1_5l.jpg"
+    },
+    "24": {
+        "class_name": "pepsi_c390ml",
+        "name": "Pepsi",
+        "packaging": "bottle",
+        "volume": "390ml",
+        "link": "static/products/pepsi_c390ml.jpg"
+    },
+    "25": {
+        "class_name": "pepsi_zero_320ml",
+        "name": "Pepsi zero",
+        "packaging": "can",
+        "volume": "320ml",
+        "link": "static/products/pepsi_zero_320ml.jpg"
+    },
+    "26": {
+        "class_name": "pepsi_zero_chanh_320ml",
+        "name": "Pepsi zero chanh",
+        "packaging": "can",
+        "volume": "320ml",
+        "link": "static/products/pepsi_zero_chanh_320ml.jpg"
+    },
+    "27": {
+        "class_name": "pepsi_zero_chanh_c390ml",
+        "name": "Pepsi zero chanh",
+        "packaging": "bottle",
+        "volume": "390ml",
+        "link": "static/products/pepsi_zero_chanh_c390ml.jpg"
+    },
+    "28": {
+        "class_name": "rockstar_250ml",
+        "name": "Rockstar",
+        "packaging": "can",
+        "volume": "250ml",
+        "link": "static/products/rockstar_250ml.jpg"
+    },
+    "29": {
+        "class_name": "sting_do_320ml",
+        "name": "Sting do",
+        "packaging": "can",
+        "volume": "320ml",
+        "link": "static/products/sting_do_320ml.jpg"
+    },
+    "30": {
+        "class_name": "sting_do_c330ml",
+        "name": "Sting do",
+        "packaging": "bottle",
+        "volume": "330ml",
+        "link": "static/products/sting_do_c330ml.jpg"
+    },
+    "31": {
+        "class_name": "sting_vang_320ml",
+        "name": "Sting vang",
+        "packaging": "can",
+        "volume": "320ml",
+        "link": "static/products/sting_vang_320ml.jpg"
+    },
+    "32": {
+        "class_name": "sting_vang_c330ml",
+        "name": "Sting vang",
+        "packaging": "bottle",
+        "volume": "330ml",
+        "link": "static/products/sting_vang_c330ml.jpg"
+    },
+    "33": {
+        "class_name": "twister_cam_c450ml",
+        "name": "Twister cam",
+        "packaging": "bottle",
+        "volume": "450ml",
+        "link": "static/products/twister_c450ml.jpg"
+    },
+    "34": {
+        "class_name": "twister_cam_320ml",
+        "name": "Twister cam",
+        "packaging": "can",
+        "volume": "320ml",
+        "link": "static/products/twister_cam_320ml.jpg"
+    },
+    "35": {
+        "class_name": "twister_cam_c1l",
+        "name": "Twister cam",
+        "packaging": "bottle",
+        "volume": "1l",
+        "link": "static/products/twister_cam_c1l.jpg"
+    },
+    "36": {
+        "class_name": "twister_cam_c320ml",
+        "name": "Twister cam",
+        "packaging": "bottle",
+        "volume": "320ml",
+        "link": "static/products/twister_cam_c320ml.jpg"
+    },
+    "37": {
+        "class_name": "twister_sua_cam_c290ml",
+        "name": "Twister sua cam",
+        "packaging": "bottle",
+        "volume": "290ml",
+        "link": "static/products/twister_sua_cam_c290ml.jpg"
+    },
+    "38": {
+        "class_name": "twister_sua_dau_c290ml",
+        "name": "Twister sua dau",
+        "packaging": "bottle",
+        "volume": "290ml",
+        "link": "static/products/twister_sua_dau_c290ml.jpg"
+    }
+}

@@ -1,0 +1,14 @@
+predict_images/
+predict_videos/
+predict_webcam/
+flaskapp/__pycache__/
+test_images/
+test_videos/
+runs/
+temp/
+desktop.ini
+myenv/
+files/
+datasets/
+img_input/
+img_output/
